@@ -1,6 +1,6 @@
 # Managment_System
 
-> Note: this document assume that you are running the application on port `8080` using the following command
+## Running the application
 ```sh
 php -S localhost:8080
 ```
@@ -9,13 +9,19 @@ php -S localhost:8080
 ```sh
 http://localhost:8080/update-department.php?id=1
 ```
+#### Note: You will get the following message if you try to access data that does not exist.
+> We do not have data in the departments table.
 
-## Route for updating the employees
+## Route for updating the employee
 ```sh
 http://localhost:8080/update-employees.php?id=1
 ```
+#### Note: You will get the following message if you try to access data that does not exist.
+> We do not have data in the employees table.
 
 ## Route for updating the update performance reviews
 ```sh
 http://localhost:8080/update-performance-reviews.php?id=1
 ```
+#### Note: You will get the following message if you try to access data that does not exist.
+> We do not have data in the performance_reviews table.
