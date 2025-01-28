@@ -13,4 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $query->bindParam(':location', $_POST['location'], PDO::PARAM_STR);
     $query->bindParam(':id', $_POST['id'], PDO::PARAM_INT);
     $query->execute();
+
+    header("Location: show_dept.php");
+    exit;
 }
