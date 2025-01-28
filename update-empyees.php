@@ -51,6 +51,7 @@
                     <label for="job_title">Job Title</label>
                     <input type="text" id="job_title" name="job_title" value="<?php echo $result['job_title'] ?>">
                 </div>
+                <input type="hidden" name="id" value="<?php echo $result['id'] ?>">
                 <button type="submit">Submit</button>
             </form>
         </div>

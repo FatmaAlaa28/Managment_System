@@ -45,6 +45,7 @@
                     <label for="comments">Comment</label>
                     <input type="text" id="comments" name="comments" value="<?php echo $result['comments'] ?>">
                 </div>
+                <input type="hidden" name="id" value="<?php echo $result['id'] ?>">
                 <button type="submit">Submit</button>
             </form>
         </div>

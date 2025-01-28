@@ -31,6 +31,7 @@
                     <label for="location">Location</label>
                     <input type="text" id="location" name="location" value="<?php echo $result['location'] ?>">
                 </div>
+                <input type="hidden" name="id" value="<?php echo $result['id'] ?>">
                 <button type="submit">Submit</button>
             </form>
         </div>
