@@ -9,7 +9,7 @@ create table departments
     `location` varchar(45) not null
 );
 
-create table emplyees
+create table employees
 (
     `id` int primary key auto_increment,
     `first_name` varchar(45) not null,
@@ -33,5 +33,5 @@ create table performance_reviews
 );
 
 insert into `departments` values (1, 'IT', 'Assuit');
-insert into `emplyees` values (1, 'Ahmed', 'Alaa', 'ahmed.email@example.com', '2025-1-1', 7000, 1, 'Backend dev');
+insert into `employees` values (1, 'Ahmed', 'Alaa', 'ahmed.email@example.com', '2025-1-1', 7000, 1, 'Backend dev');
 insert into `performance_reviews` values (1, 1, '2025-1-1', 4, 'the comment');

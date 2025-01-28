@@ -3,7 +3,7 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require_once '../db-connection.php';
 
-    $query = $pdo->prepare("UPDATE emplyees SET
+    $query = $pdo->prepare("UPDATE employees SET
     first_name=:first_name,
     last_name=:last_name,
     email=:email,

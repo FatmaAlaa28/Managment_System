@@ -10,9 +10,9 @@ php -S localhost:8080
 http://localhost:8080/update-department.php?id=1
 ```
 
-## Route for updating the empyees
+## Route for updating the employees
 ```sh
-http://localhost:8080/update-empyees.php?id=1
+http://localhost:8080/update-employees.php?id=1
 ```
 
 ## Route for updating the update performance reviews

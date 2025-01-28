@@ -1,12 +1,12 @@
 <?php
     if ($_SERVER['REQUEST_METHOD'] === 'GET' && $_GET['id']) {
         require_once 'db-connection.php';
-        $query = $pdo->prepare("SELECT * from emplyees where id=:id;");
+        $query = $pdo->prepare("SELECT * from employees where id=:id;");
         $query->bindParam(':id', $_GET['id'], PDO::PARAM_INT);
         $query->execute();
         $result = $query->fetch();
         if (! $result) {
-            die('We do not have data in the emplyees table.');
+            die('We do not have data in the employees table.');
         }
     }
 ?>
@@ -17,12 +17,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Empyees Form</title>
+        <title>Employees Form</title>
     </head>
     <body>
         <div class="container">
-            <h2>Emplyees Form</h2>
-            <form action="controllers/update-empyees.php" method="POST">
+            <h2>Employees Form</h2>
+            <form action="controllers/update-employees.php" method="POST">
                 <div class="form-group">
                     <label for="first_name">First Name</label>
                     <input type="text" id="first_name" name="first_name" value="<?php echo $result['first_name'] ?>">
