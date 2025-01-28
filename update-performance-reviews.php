@@ -5,6 +5,9 @@
         $query->bindParam(':id', $_GET['id'], PDO::PARAM_INT);
         $query->execute();
         $result = $query->fetch();
+        if (! $result) {
+            die('we do not have data in the performance_reviews table');
+        }
     }
 ?>
 
