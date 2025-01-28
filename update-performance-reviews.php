@@ -6,7 +6,7 @@
         $query->execute();
         $result = $query->fetch();
         if (! $result) {
-            die('we do not have data in the performance_reviews table');
+            die('We do not have data in the performance_reviews table.');
         }
     }
 ?>

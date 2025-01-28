@@ -6,7 +6,7 @@
         $query->execute();
         $result = $query->fetch();
         if (! $result) {
-            die('we do not have data in the departments table');
+            die('We do not have data in the departments table.');
         }
     }
 ?>
