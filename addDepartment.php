@@ -14,7 +14,8 @@ if (isset($_POST['submit'])) {
     // Bind and execute
     $stmt->bind_param("ss", $name, $location);
     if ($stmt->execute()) {
-        echo "New records created successfully";
+        header("Location: show_dept.php");
+        exit;
     } else {
         echo "Error: " . $stmt->error;
     }
