@@ -7,7 +7,6 @@ $password = '';
 // using PHP Data Objects
 try {
     $pdo = new PDO($connection_string, $user, $password);
-}
-catch (PDOException $e) {
+} catch (PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();
 }
