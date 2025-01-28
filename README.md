@@ -5,21 +5,21 @@
 php -S localhost:8080
 ```
 
-## Route for updating the department
+## Route for updating the `departments`
 ```sh
 http://localhost:8080/update-department.php?id=1
 ```
 #### Note: You will get the following message if you try to access data that does not exist.
 > We do not have data in the departments table.
 
-## Route for updating the employee
+## Route for updating the `employees`
 ```sh
 http://localhost:8080/update-employees.php?id=1
 ```
 #### Note: You will get the following message if you try to access data that does not exist.
 > We do not have data in the employees table.
 
-## Route for updating the update performance reviews
+## Route for updating the update `performance_reviews`
 ```sh
 http://localhost:8080/update-performance-reviews.php?id=1
 ```
